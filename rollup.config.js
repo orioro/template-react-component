@@ -7,11 +7,16 @@ const postCSS = require('rollup-plugin-postcss')
 
 module.exports = {
   input: 'src/index.js',
-  output: {
-    name: 'renderer',
-    file: 'dist/index.js',
-    format: 'cjs',
-  },
+  output: [
+    {
+      file: 'dist/index.js',
+      format: 'cjs',
+    },
+    {
+      file: 'dist/index.mjs',
+      format: 'esm',
+    }
+  ],
   watch: {},
   external: [
     ...Object.keys(require('./package.json').dependencies),
