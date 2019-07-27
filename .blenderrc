@@ -3,8 +3,9 @@
 		"component-name"
 	],
 	"ignore": [
+    "package-lock.json",
 		"node_modules/**/*",
 		".DS_Store",
-		"demo/**/*.bundle.js"
+    "dist/**/*"
 	]
 }

@@ -1,13 +1,5 @@
 import React from 'react'
 
-class ComponentName extends React.Component {
-	constructor(props) {
-		super(props)
-	}
-
-	render() {
-		return <div>component-name: {this.props.someProp}</div>
-	}
+export const ComponentName = ({ someProp }) => {
+  return <div>component-name: {someProp}</div>
 }
-
-export default ComponentName
