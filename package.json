@@ -5,11 +5,12 @@
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "scripts": {
-    "build": "rollup --config rollup/build.config.js",
+    "build": "rollup --config rollup/build.config.js && npm run tsc-declaration",
     "prepublish": "npm run build",
     "update-dependencies": "npx npm-check-updates -u",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "tsc-declaration": "tsc --declaration --emitDeclarationOnly --declarationDir dist"
   },
   "author": "",
   "license": "ISC",
