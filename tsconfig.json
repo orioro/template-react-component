@@ -18,10 +18,7 @@
     "isolatedModules": true,
     "jsx": "react"
   },
-  "include": [
-    "src"
-  ],
   "exclude": [
-    "src/*.stories.*"
+    "node_modules"
   ]
 }

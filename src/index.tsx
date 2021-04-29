@@ -1,5 +1,11 @@
 import React from 'react'
 
-export const ComponentName = ({ someProp }:{ someProp: string }) => {
+export type ComponentNameProps = {
+  someProp: string
+}
+
+export const ComponentName = ({
+  someProp,
+}: ComponentNameProps): React.ReactElement => {
   return <div>component-name: {someProp}</div>
 }
