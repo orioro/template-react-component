@@ -1,13 +1,13 @@
 {
-  "name": "@npm-org/component-name",
+  "name": "@npm-org/project-name",
   "version": "0.0.0-semantic-release",
   "description": "",
   "keywords": [],
-  "homepage": "https://github.com/npm-org/react-component-name",
-  "bugs": "https://github.com/npm-org/react-component-name/issues",
+  "homepage": "https://github.com/npm-org/project-name",
+  "bugs": "https://github.com/npm-org/project-name/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/npm-org/react-component-name.git"
+    "url": "https://github.com/npm-org/project-name.git"
   },
   "main": "dist/index.js",
   "module": "dist/index.mjs",
