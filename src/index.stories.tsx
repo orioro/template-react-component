@@ -1,12 +1,20 @@
 import React from 'react'
 
-import { ComponentName } from '../src/index'
+import { Story } from '@storybook/react'
+
+import { ComponentName, ComponentNameProps } from '../src/index'
 
 export default {
   title: 'ComponentName',
   component: ComponentName,
 }
 
-export const Case1 = (): React.ReactElement => {
-  return <ComponentName someProp='test prop' />
+const Case1Template: Story<ComponentNameProps> = (props) => (
+  <ComponentName {...props} />
+)
+
+export const Case1 = Case1Template.bind({})
+
+Case1.args = {
+  someProp: 'test prop value',
 }
