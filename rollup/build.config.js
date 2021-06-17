@@ -1,8 +1,8 @@
 const path = require('path')
 
-const resolve = require('rollup-plugin-node-resolve')
-const commonjs = require('rollup-plugin-commonjs')
-const babel = require('rollup-plugin-babel')
+const {nodeResolve} = require('@rollup/plugin-node-resolve')
+const commonjs = require('@rollup/plugin-commonjs')
+const { babel } = require('@rollup/plugin-babel')
 const postCSS = require('rollup-plugin-postcss')
 
 const jsExtensions = ['.mjs', '.js', '.jsx', '.ts', '.tsx', '.json', '.node']
@@ -41,7 +41,7 @@ module.exports = {
     //   ],
     //   exclude: 'node_modules/**'
     // }),
-    resolve({
+    nodeResolve({
       browser: true
     }),
     commonjs({}),
