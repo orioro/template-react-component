@@ -1,6 +1,6 @@
 const path = require('path')
 
-const {nodeResolve} = require('@rollup/plugin-node-resolve')
+const { nodeResolve } = require('@rollup/plugin-node-resolve')
 const commonjs = require('@rollup/plugin-commonjs')
 const { babel } = require('@rollup/plugin-babel')
 const postCSS = require('rollup-plugin-postcss')
@@ -17,7 +17,7 @@ module.exports = {
     {
       file: 'dist/index.mjs',
       format: 'esm',
-    }
+    },
   ],
   watch: {},
   external: [
@@ -29,12 +29,11 @@ module.exports = {
     babel({
       babelrc: true,
       exclude: 'node_modules/**',
-      extensions: jsExtensions
+      extensions: jsExtensions,
     }),
     nodeResolve({
-      browser: true
+      browser: true,
     }),
     commonjs({}),
-  ]
-
+  ],
 }
