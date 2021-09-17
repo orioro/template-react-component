@@ -31,16 +31,6 @@ module.exports = {
       exclude: 'node_modules/**',
       extensions: jsExtensions
     }),
-    // babel({
-    //   presets: [
-    //     '@babel/preset-env',
-    //     '@babel/preset-react'
-    //   ],
-    //   plugins: [
-    //     '@babel/plugin-proposal-object-rest-spread'
-    //   ],
-    //   exclude: 'node_modules/**'
-    // }),
     nodeResolve({
       browser: true
     }),

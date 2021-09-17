@@ -4,8 +4,5 @@
     "@babel/preset-typescript",
     "@babel/preset-react"
   ],
-  "plugins": [
-    "@babel/plugin-proposal-object-rest-spread"
-  ],
   exclude: "node_modules/**"
 }
